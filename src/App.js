@@ -28,7 +28,7 @@ const App = () => {
           ATools
           <span className="text-red-800">.</span>
         </div>
-        <div className="flex gap-2">
+        <div className=" gap-2 hidden sm:block">
           <button className="px-8 py-2 bg-[#003049] text-white font-['Inter', sans-serif] font-semibold text-sm rounded-sm">
             Start Free Trial
           </button>
@@ -37,17 +37,17 @@ const App = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-8 ">
+      <div className="sm:grid grid-cols-8 ">
         <div className="col-start-1 col-end-4 shadow-inner">
-          <div className=" flex flex-col justify-center items-center min-h-[93.2vh] mx-[100px]">
+          <div className=" flex flex-col justify-center items-center min-h-[93.2vh] sm:mx-[100px]">
             <div className="flex flex-col items-center font-['Inter', sans-serif] text-[#003049] ">
-              <h1 className="font-black text-[30px]">Welcome Back</h1>
-              <span className="text-[14px] font-medium opacity-80">
+              <h1 className="font-black sm:text-[30px]">Welcome Back</h1>
+              <span className="sm:text-[14px] text-[10px] font-medium opacity-80">
                 Login to procced
               </span>
 
               <input
-                className="text-black rounded-sm py-2 px-2 border-2 w-[150%] placeholder:text-[12px] font-normal opacity-80 mt-4"
+                className="text-black rounded-sm py-2 px-2 border-2 w-[150%]  placeholder:text-[12px] font-normal opacity-80 mt-4"
                 type="email"
                 placeholder="Email Address*"
                 value={email}
@@ -57,7 +57,7 @@ const App = () => {
               />
 
               <input
-                className="text-black rounded-sm py-2 px-2 border-2 w-[150%] placeholder:text-[12px] font-normal opacity-80 mt-4"
+                className="text-black rounded-sm py-2 px-2 border-2 w-[150%] text-base placeholder:text-[12px] font-normal opacity-80 mt-4"
                 type="password"
                 placeholder="Password*"
                 value={password}
@@ -74,7 +74,7 @@ const App = () => {
               </button>
             </div>
 
-            <div className="flex flex-row justify-between items-center gap-24 text-[12px] font-medium opacity-80 mt-2">
+            <div className="flex flex-row justify-between items-center gap-14 sm:gap-24 sm:text-[12px] text-[8px] font-medium opacity-80 mt-2">
               <div className="flex items-center">
                 <input
                   className="checked:bg-red-600"
@@ -89,7 +89,7 @@ const App = () => {
           </div>
         </div>
 
-        <div className="col-start-4 col-end-9 bg-[#003049] min-h-[93.2vh] flex justify-center items-center">
+        <div className="col-start-4 col-end-9 bg-[#003049] min-h-[93.2vh] justify-center items-center hidden sm:block">
           <img className="w-[90vh] " src="/img.png" alt="lognin" />
         </div>
       </div>
